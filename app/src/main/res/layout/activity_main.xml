@@ -39,6 +39,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/error_color"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/error_color"
+        app:errorTextColor="#FF0000"
         app:hintAnimationEnabled="true"
         app:hintEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +52,7 @@
         app:placeholderTextColor="@android:color/darker_gray">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPrecoAlcool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço Alcool"
@@ -63,6 +68,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        app:boxStrokeErrorColor="@color/error_color"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/error_color"
+        app:errorTextColor="@color/error_color"
         app:hintAnimationEnabled="true"
         app:hintEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,6 +81,7 @@
         app:placeholderTextColor="@android:color/darker_gray">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPrecoGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço Gasolina"
@@ -86,13 +96,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
+        android:onClick="submit"
         android:text="CALCULAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutGasolina" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/resultText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
